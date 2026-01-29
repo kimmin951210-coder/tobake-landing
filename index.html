@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>카지노토박이</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 100%; /* ✅ 모바일 기본: 화면 꽉 */
+      margin: auto;
+    }
+
+    /* ✅ PC: 화면 60% */
+    @media (min-width: 900px) {
+      .wrapper {
+        width: 60%;
+      }
+    }
+
+    /* ✅ PNG 원본 이미지 */
+    .wrapper img {
+      width: 100%;
+      display: block;
+    }
+
+    /* 클릭 영역 공통 */
+    .click-zone {
+      position: absolute;
+      left: 5%;
+      width: 90%;
+      height: 15%;
+      cursor: pointer;
+    }
+
+    /* ✅ 각각 위치 조정 */
+    .zone-live { top: 47.2%; }
+    .zone-talk { top: 64%; }
+    .zone-tele { top: 80.9%; }
+
+    /* 클릭 시 살짝 효과 */
+    .click-zone:hover { opacity: 0.98; }
+
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <img src="landing.png" alt="카지노토박이 랜딩">
+
+    <a href="https://open.kakao.com/o/g77RAUlh"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="click-zone zone-live"></a>
+
+    <a href="https://open.kakao.com/o/s1q0v8Ag"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="click-zone zone-talk"></a>
+
+    <a href="https://t.me/storyinquiry"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="click-zone zone-tele"></a>
+
+  </div>
+</body>
+</html>
